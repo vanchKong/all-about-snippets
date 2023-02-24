@@ -80,7 +80,19 @@
       {
         "language": "jade",
         "path": "./snippets/pug.json"
-      }
+      },
+			{
+				"language": "css",
+				"path": "./snippets/base/css.json"
+			},
+			{
+				"language": "less",
+				"path": "./snippets/base/css.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/base/css.json"
+			},
     ]
   }
 }
