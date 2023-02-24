@@ -1,0 +1,409 @@
+{
+  "Vue2-data": {
+    "prefix": "$(record-small)data",
+    "body": [
+      "data() {",
+      "\treturn {",
+      "\t\t${0}",
+      "\t}",
+      "},"
+    ]
+  },
+  "Vue2-methods": {
+    "prefix": "$(record-small)method",
+    "body": [
+      "methods: {",
+      "\t${1:name}() {",
+      "\t\t${0}",
+      "\t}",
+      "},"
+    ]
+  },
+
+  "Vue2-props": {
+    "prefix": "$(record-small)props",
+    "body": [
+      "props: {",
+      "\t${0}",
+      "}"
+    ]
+  },
+  "Vue3-defineProps": {
+    "prefix": "$(record-small)props",
+    "body": [
+      "const props = defineProps({",
+      "\t",
+      "})",
+      "const emit = defineEmits([])",
+      "defineExpose({})"
+    ]
+  },
+  // 指令
+
+  // 计算属性
+  "Vue2-computed": {
+    "prefix": "$(record-small)computed",
+    "body": [
+      "computed: {",
+      "\t${1:name}() {",
+      "\t\treturn this.${2:data} ${0}",
+      "\t}",
+      "},"
+    ]
+  },
+  "Vue2-computed-options": {
+    "prefix": "$(record-small)computedoptions",
+    "body": [
+      "computed: {",
+      "\tdata: {",
+      "\t\tget() {",
+      "\t\t\treturn 0",
+      "\t\t},",
+      "\t\tset(newValue) {},",
+      "\t},",
+      "},"
+    ]
+  },
+  "Vue3-computed": {
+    "prefix": "$(record-small)computed",
+    "body": [
+      "const result = computed(() => {",
+      "\treturn 0",
+      "})"
+    ]
+  },
+  "Vue3-computed-options": {
+    "prefix": "$(record-small)computedoptions",
+    "body": [
+      "const result = computed({",
+      "\tget() {",
+      "\t\treturn ${0:''}",
+      "\t},",
+      "\tset() {},",
+      "})"
+    ]
+  },
+  // 监听器
+  "Vue2-watch": {
+    "prefix": "$(record-small)watch",
+    "body": [
+      "watch: {",
+      "\t${1:data}(val, oldVal) {",
+      "\t\t${0}",
+      "\t},",
+      "},"
+    ]
+  },
+  "Vue2-watch-options": {
+    "prefix": "$(record-small)watchoptions",
+    "body": [
+      "watch: {",
+      "\t${1:data}: {",
+      "\t\thandler(val, oldVal) {},",
+      "\t\tdeep: true,",
+      "\t\timmediate: false,",
+      "\t},",
+      "},"
+    ]
+  },
+
+  "Vue3-watch": {
+    "prefix": "$(record-small)watch",
+    "body": [
+      "watch(${0:data}, (val, oldVal) => {",
+      "\t",
+      "})"
+    ]
+  },
+  "Vue3-watch-options": {
+    "prefix": "$(record-small)watchoptions",
+    "body": [
+      "watch(${0:data}, (val, oldVal) => {",
+      "\t",
+      "}, { immediate: true, deep: true })"
+    ]
+  },
+  "Vue3-watchEffect": {
+    "prefix": "$(record-small)watcheffect",
+    "body": [
+      "watchEffect(() => {",
+      "\t${1}",
+      "})"
+    ]
+  },
+
+  // 生命周期
+  "Vue2-beforeCreate": {
+    "prefix": "$(record-small)beforecreate",
+    "body": [
+      "beforeCreate() {",
+      "\t${0}",
+      "},"
+    ]
+  },
+  "Vue2-created": {
+    "prefix": "$(record-small)created",
+    "body": [
+      "created() {",
+      "\t${0}",
+      "},"
+    ]
+  },
+  "Vue2-mounted": {
+    "prefix": "$(record-small)mounted",
+    "body": [
+      "mounted() {",
+      "\t${0}",
+      "},"
+    ]
+  },
+  "Vue2-beforeDestroy": {
+    "prefix": "$(record-small)beforedestroy",
+    "body": [
+      "beforeDestroy() {",
+      "\t${0}",
+      "},"
+    ]
+  },
+  "Vue2-destroyed": {
+    "prefix": "$(record-small)destroyed",
+    "body": [
+      "destroyed() {",
+      "\t${0}",
+      "},"
+    ]
+  },
+  "vue3-onMounted": {
+    "prefix": "$(record-small)onMounted",
+    "body": [
+      "onMounted(() => {",
+      "\t${0}",
+      "})"
+    ]
+  },
+  "vue3-onBeforeUpdate": {
+    "prefix": "$(record-small)onBeforeUpdate",
+    "body": [
+      "onBeforeUpdate(() => {",
+      "\t${0}",
+      "})"
+    ]
+  },
+  "vue3-onUpdated": {
+    "prefix": "$(record-small)onUpdated",
+    "body": [
+      "onUpdated(() => {",
+      "\t${0}",
+      "})"
+    ]
+  },
+  "vue3-onBeforeUnmount": {
+    "prefix": "$(record-small)onBeforeUnmount",
+    "body": [
+      "onBeforeUnmount(() => {",
+      "\t${0}",
+      "})"
+    ]
+  },
+  "vue3-onUnmounted": {
+    "prefix": "$(record-small)onUnmounted",
+    "body": [
+      "onUnmounted(() => {",
+      "\t${0}",
+      "})"
+    ]
+  },
+
+  // 全局方法
+  "vue2-$nextTick": {
+    "prefix": "$(record-small).$nextTick",
+    "body": [
+      ".\\$nextTick(() => {",
+      "\t${1}",
+      "})"
+    ]
+  },
+  "vue2-$forceUpdate": {
+    "prefix": "$(record-small).$forceUpdate",
+    "body": [
+      ".\\$forceUpdate()"
+    ]
+  },
+  "vue2-$set": {
+    "prefix": "$(record-small).$set",
+    "body": [
+      ".\\$set(${2:target}, ${3:key}, ${4:value})"
+    ]
+    // "description": "vm.$set( target, key, value ). This is the alias of the global Vue.set."
+  },
+  "vue2-$emit": {
+    "prefix": "$(record-small).$emit",
+    "body": [
+      ".\\$emit('${0}')"
+    ]
+  },
+  "vue3-nextTick": {
+    "prefix": "$(record-small)nextTick",
+    "body": [
+      "nextTick(() => {",
+      "\t${1}",
+      "})"
+    ]
+  },
+  "vue3-emit": {
+    "prefix": "$(record-small)emit",
+    "body": ["emit('${0}')"]
+  },
+  // 路由
+
+  "$router.push()": {
+    "prefix": "$(record-small).$router",
+    "body": [
+      ".\\$router.push({path: '$0', qery: '$1'})"
+    ],
+    "description": "router.push()"
+  },
+
+  "$router.replace()": {
+    "prefix": "$(record-small).$router",
+    "body": [
+      ".\\$router.replace({path: '$0', qery: '$1'})"
+    ],
+    "description": "router.replace()"
+  },
+
+  "$router.go()": {
+    "prefix": "$(record-small).$router",
+    "body": [
+      ".\\$router.go(${0:-1})"
+    ],
+    "description": "router.go()"
+  },
+
+  "$router.back()": {
+    "prefix": "$(record-small).$router",
+    "body": [
+      ".\\$router.back($0)"
+    ],
+    "description": "router.back()"
+  },
+  "$router.forward()": {
+    "prefix": "$(record-small).$router",
+    "body": [
+      ".\\$router.forward($0)"
+    ],
+    "description": "router.forward()"
+  },
+  "$route.query": {
+    "prefix": "$(record-small).$routeq",
+    "body": [
+      ".\\$route.query"
+    ],
+    "description": "route.query"
+  },
+
+  "router.beforeEach()": {
+    "prefix": "$(record-small)router.beforeEach",
+    "body": [
+      "${1:router}.beforeEach((to, from, next) => {",
+      "\t${2:// to and from are both route objects. must call `next`.}",
+      "})$0"
+    ],
+    "description": "router.beforeEach()"
+  },
+	"router.afterEach": {
+			"prefix": "$(record-small)router.afterEach",
+			"body": [
+					"${1:router}.afterEach((to, from) => {",
+					"\t${2:// to and from are both route objects.}",
+					"})$0"
+			],
+			"description": "router.afterEach"
+	},
+  "$route.params": {
+    "prefix": "$(record-small).$routep",
+    "body": [
+      ".\\$route.params"
+    ],
+    "description": "route.params"
+  },
+  // 单词提示
+
+  "preventDefault": {
+    "prefix": "$(record-small)preventDefault",
+    "body": [
+      "preventDefault()",
+      "$1"
+    ],
+    "description": "preventDefault()"
+  },
+  "directives": {
+    "prefix": "$(record-small)directives",
+    "body": ["directives"]
+  },
+  "components": {
+    "prefix": "$(record-small)components",
+    "body": ["components"],
+    "description": "just a word"
+  },
+  "mixins": {
+    "prefix": "$(record-small)mixins",
+    "body": ["mixins"],
+    "description": "just a word"
+  },
+  "provide": {
+    "prefix": "$(record-small)provide",
+    "body": ["provide"],
+    "description": "just a word"
+  },
+  "inject": {
+    "prefix": "$(record-small)inject",
+    "body": ["inject"],
+    "description": "just a word"
+  },
+  "immediate": {
+    "prefix": "$(record-small)immediate",
+    "body": ["immediate"],
+    "description": "just a word"
+  },
+  "state": {
+    "prefix": "$(record-small)state",
+    "body": ["state"],
+    "description": "just a word"
+  },
+  "getters": {
+    "prefix": "$(record-small)getters",
+    "body": ["getters"],
+    "description": "just a word"
+  },
+  "mutations": {
+    "prefix": "$(record-small)mutations",
+    "body": ["mutations"],
+    "description": "just a word"
+  },
+  "actions": {
+    "prefix": "$(record-small)actions",
+    "body": ["actions"],
+    "description": "just a word"
+  },
+  "mapState": {
+    "prefix": "$(record-small)mapState",
+    "body": ["mapState"],
+    "description": "just a word"
+  },
+  "mapGetters": {
+    "prefix": "$(record-small)mapGetters",
+    "body": ["mapGetters"],
+    "description": "just a word"
+  },
+  "mapActions": {
+    "prefix": "$(record-small)mapActions",
+    "body": ["mapActions"],
+    "description": "just a word"
+  },
+  "mapMutations": {
+    "prefix": "$(record-small)mapMutations",
+    "body": ["mapMutations"],
+    "description": "just a word"
+  }
+}

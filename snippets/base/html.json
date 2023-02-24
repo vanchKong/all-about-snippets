@@ -1,0 +1,870 @@
+{
+  "doctype": {
+    "prefix": "$(record-small)doctype",
+    "body": [
+      "<!DOCTYPE>",
+      "$1"
+    ],
+    "description": "HTML - Defines the document type",
+    "scope": "text.html"
+  },
+  "a:blank": {
+    "prefix": "$(record-small)a:blank",
+    "body": "<a href=\"$1\" target=\"_blank\">$2</a>$3",
+    "scope": "text.html"
+  },
+  "a": {
+    "prefix": "$(record-small)a",
+    "body": "<a href=\"$1\">$2</a>$3",
+    "description": "HTML - Defines a hyperlink",
+    "scope": "text.html"
+  },
+
+  // "abbr": {
+  //   "prefix": "$(record-small)abbr",
+  //   "body": "<abbr title=\"$1\">$2</abbr>$3",
+  //   "description": "HTML - Defines an abbreviation",
+  //   "scope": "text.html"
+  // },
+  // "address": {
+  //   "prefix": "$(record-small)address",
+  //   "body": [
+  //     "<address>",
+  //     "$1",
+  //     "</address>"
+  //   ],
+  //   "description": "HTML - Defines an address element",
+  //   "scope": "text.html"
+  // },
+  // "area": {
+  //   "prefix": "$(record-small)area",
+  //   "body": "<area shape=\"$1\" coords=\"$2\" href=\"$3\" alt=\"$4\">$5",
+  //   "description": "HTML - Defines an area inside an image map",
+  //   "scope": "text.html"
+  // },
+  // "article": {
+  //   "prefix": "$(record-small)article",
+  //   "body": [
+  //     "<article>",
+  //     "\t$1",
+  //     "</article>"
+  //   ],
+  //   "description": "HTML - Defines an article",
+  //   "scope": "text.html"
+  // },
+  // "aside": {
+  //   "prefix": "$(record-small)aside",
+  //   "body": [
+  //     "<aside>",
+  //     "\t$1",
+  //     "</aside>$2"
+  //   ],
+  //   "description": "HTML - Defines content aside from the page content",
+  //   "scope": "text.html"
+  // },
+  "audio": {
+    "prefix": "$(record-small)audio",
+    "body": [
+      "<audio src=\"$0\" controls></audio>"
+    ],
+    "description": "HTML - Defines sounds content",
+    "scope": "text.html"
+  },
+  // "b": {
+  //   "prefix": "$(record-small)b",
+  //   "body": "<b>$1</b>$2",
+  //   "description": "HTML - Defines bold text",
+  //   "scope": "text.html"
+  // },
+  // "base": {
+  //   "prefix": "$(record-small)base",
+  //   "body": "<base href=\"$1\" target=\"$2\">$3",
+  //   "description": "HTML - Defines a base URL for all the links in a page",
+  //   "scope": "text.html"
+  // },
+  // "bdi": {
+  //   "prefix": "$(record-small)bdi",
+  //   "body": "<bdi>$1</bdi>$2",
+  //   "description": "HTML - Used to isolate text that is of unknown directionality",
+  //   "scope": "text.html"
+  // },
+  // "bdo": {
+  //   "prefix": "$(record-small)bdo",
+  //   "body": [
+  //     "<bdo dir=\"$1\">",
+  //     "$2",
+  //     "</bdo>"
+  //   ],
+  //   "description": "HTML - Defines the direction of text display",
+  //   "scope": "text.html"
+  // },
+  // "big": {
+  //   "prefix": "$(record-small)big",
+  //   "body": "<big>$1</big>$2",
+  //   "description": "HTML - Used to make text bigger",
+  //   "scope": "text.html"
+  // },
+  // "blockquote": {
+  //   "prefix": "$(record-small)blockquote",
+  //   "body": [
+  //     "<blockquote cite=\"$2\">",
+  //     "\t$1",
+  //     "</blockquote>"
+  //   ],
+  //   "description": "HTML - Defines a long quotation",
+  //   "scope": "text.html"
+  // },
+  "body": {
+    "prefix": "$(record-small)body",
+    "body": [
+      "<body>",
+      "\t$1",
+      "</body>"
+    ],
+    "description": "HTML - Defines the body element",
+    "scope": "text.html"
+  },
+  "br": {
+    "prefix": "$(record-small)br",
+    "body": "<br />",
+    "description": "HTML - Inserts a single line break",
+    "scope": "text.html"
+  },
+  "button": {
+    "prefix": "$(record-small)button",
+    "body": "<button type=\"$1\">$2</button>$3",
+    "description": "HTML - Defines a push button",
+    "scope": "text.html"
+  },
+  "canvas": {
+    "prefix": "$(record-small)canvas",
+    "body": "<canvas id=\"$1\">$2</canvas>$3",
+    "description": "HTML - Defines graphics",
+    "scope": "text.html"
+  },
+  // "caption": {
+  //   "prefix": "$(record-small)caption",
+  //   "body": "<caption>$1</caption>$2",
+  //   "description": "HTML - Defines a table caption",
+  //   "scope": "text.html"
+  // },
+  // "cite": {
+  //   "prefix": "$(record-small)cite",
+  //   "body": "<cite>$1</cite>$2",
+  //   "description": "HTML - Defines a citation",
+  //   "scope": "text.html"
+  // },
+  "code": {
+    "prefix": "$(record-small)code",
+    "body": "<code>$1</code>$2",
+    "description": "HTML - 代码",
+    "scope": "text.html"
+  },
+  // "col": {
+  //   "prefix": "$(record-small)col",
+  //   "body": "<col>$2",
+  //   "description": "HTML - Defines attributes for table columns",
+  //   "scope": "text.html"
+  // },
+  // "colgroup": {
+  //   "prefix": "$(record-small)colgroup",
+  //   "body": [
+  //     "<colgroup>",
+  //     "\t$1",
+  //     "</colgroup>"
+  //   ],
+  //   "description": "HTML - Defines group of table columns",
+  //   "scope": "text.html"
+  // },
+  "command": {
+    "prefix": "$(record-small)command",
+    "body": "<command>$1</command>$2",
+    "description": "HTML - Defines a command button [not supported]",
+    "scope": "text.html"
+  },
+  // "datalist": {
+  //   "prefix": "$(record-small)datalist",
+  //   "body": [
+  //     "<datalist>",
+  //     "\t$1",
+  //     "</datalist>"
+  //   ],
+  //   "description": "HTML - Defines a dropdown list",
+  //   "scope": "text.html"
+  // },
+  // "dd": {
+  //   "prefix": "$(record-small)dd",
+  //   "body": "<dd>$1</dd>$2",
+  //   "description": "HTML - Defines a definition description",
+  //   "scope": "text.html"
+  // },
+  "del": {
+    "prefix": "$(record-small)del",
+    "body": "<del>$1</del>$2",
+    "description": "HTML - 删除线",
+    "scope": "text.html"
+  },
+  "details": {
+    "prefix": "$(record-small)details",
+    "body": [
+      "<details>",
+      "\t$1",
+      "</details>"
+    ],
+    "description": "HTML - Defines details of an element",
+    "scope": "text.html"
+  },
+  // "dialog": {
+  //   "prefix": "$(record-small)dialog",
+  //   "body": "<dialog>$1</dialog>$2",
+  //   "description": "HTML - Defines a dialog (conversation)",
+  //   "scope": "text.html"
+  // },
+  "dfn": {
+    "prefix": "$(record-small)dfn",
+    "body": "<dfn>$1</dfn>$2",
+    "description": "HTML - 术语",
+    "scope": "text.html"
+  },
+  "div": {
+    "prefix": "$(record-small)div",
+    "body": [
+      "<div>",
+      "\t$1",
+      "</div>"
+    ],
+    "description": "HTML - Defines a section in a document",
+    "scope": "text.html"
+  },
+  // "dl": {
+  //   "prefix": "$(record-small)dl",
+  //   "body": [
+  //     "<dl>",
+  //     "\t$1",
+  //     "</dl>"
+  //   ],
+  //   "description": "HTML - Defines a definition list",
+  //   "scope": "text.html"
+  // },
+  // "dt": {
+  //   "prefix": "$(record-small)dt",
+  //   "body": "<dt>$1</dt>$2",
+  //   "description": "HTML - Defines a definition term",
+  //   "scope": "text.html"
+  // },
+  "em": {
+    "prefix": "$(record-small)em",
+    "body": "<em>$1</em>$2",
+    "description": "HTML - 斜体",
+    "scope": "text.html"
+  },
+  "embed": {
+    "prefix": "$(record-small)embed",
+    "body": "<embed src=\"$1\">$2",
+    "description": "HTML - 外部容器",
+    "scope": "text.html"
+  },
+  "fieldset": {
+    "prefix": "$(record-small)fieldset",
+    "body": [
+      "<fieldset>",
+      "\t$1",
+      "</fieldset>"
+    ],
+    "description": "HTML - 表单框，配合<legend>为标题",
+    "scope": "text.html"
+  },
+  "figure": {
+    "prefix": "$(record-small)figure",
+    "body": [
+      "<figure>",
+      "\t$1",
+      "</figure>"
+    ],
+    "description": "HTML - Defines a group of media content, and their caption",
+    "scope": "text.html"
+  },
+  "figcaption": {
+    "prefix": "$(record-small)figcaption",
+    "body": "<figcaption>$1</figcaption>$2",
+    "description": "HTML - Defines a caption for a figure",
+    "scope": "text.html"
+  },
+  "footer": {
+    "prefix": "$(record-small)footer",
+    "body": [
+      "<footer>",
+      "\t$1",
+      "</footer>"
+    ],
+    "description": "HTML - Defines a footer for a section or page",
+    "scope": "text.html"
+  },
+  "form": {
+    "prefix": "$(record-small)form",
+    "body": [
+      "<form>",
+      "\t$1",
+      "</form>"
+    ],
+    "description": "HTML - Defines a form",
+    "scope": "text.html"
+  },
+  "h1": {
+    "prefix": "$(record-small)h1",
+    "body": "<h1>$1</h1>$2",
+    "description": "HTML - Defines header 1",
+    "scope": "text.html"
+  },
+  "h2": {
+    "prefix": "$(record-small)h2",
+    "body": "<h2>$1</h2>$2",
+    "description": "HTML - Defines header 2",
+    "scope": "text.html"
+  },
+  "h3": {
+    "prefix": "$(record-small)h3",
+    "body": "<h3>$1</h3>$2",
+    "description": "HTML - Defines header 3",
+    "scope": "text.html"
+  },
+  "h4": {
+    "prefix": "$(record-small)h4",
+    "body": "<h4>$1</h4>$2",
+    "description": "HTML - Defines header 4",
+    "scope": "text.html"
+  },
+  "h5": {
+    "prefix": "$(record-small)h5",
+    "body": "<h5>$1</h5>$2",
+    "description": "HTML - Defines header 5",
+    "scope": "text.html"
+  },
+  "h6": {
+    "prefix": "$(record-small)h6",
+    "body": "<h6>$1</h6>$2",
+    "description": "HTML - Defines header 6",
+    "scope": "text.html"
+  },
+  "head": {
+    "prefix": "$(record-small)head",
+    "body": [
+      "<head>",
+      "\t$1",
+      "</head>"
+    ],
+    "description": "HTML - Defines information about the document",
+    "scope": "text.html"
+  },
+  "header": {
+    "prefix": "$(record-small)header",
+    "body": [
+      "<header>",
+      "\t$1",
+      "</header>"
+    ],
+    "description": "HTML - Defines a header for a section of page",
+    "scope": "text.html"
+  },
+  "hgroup": {
+    "prefix": "$(record-small)hgroup",
+    "body": [
+      "<hgroup>",
+      "\t$1",
+      "</hgroup>"
+    ],
+    "description": "HTML - Defines information about a section in a document",
+    "scope": "text.html"
+  },
+  "hr": {
+    "prefix": "$(record-small)hr",
+    "body": "<hr />",
+    "description": "HTML - Defines a horizontal rule",
+    "scope": "text.html"
+  },
+  "html": {
+    "prefix": "$(record-small)html",
+    "body": [
+      "<html>",
+      "\t$1",
+      "</html>"
+    ],
+    "description": "HTML - Defines an html document",
+    "scope": "text.html"
+  },
+  "html5": {
+    "prefix": "$(record-small)html5",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"$1en\">",
+      "\t<head>",
+      "\t\t<title>$2</title>",
+      "\t\t<meta charset=\"UTF-8\">",
+      "\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "\t\t<link href=\"$3css/style.css\" rel=\"stylesheet\">",
+      "\t</head>",
+      "\t<body>",
+      "\t$4",
+      "\t</body>",
+      "</html>"
+    ],
+    "description": "HTML - Defines a template for a html5 document",
+    "scope": "text.html"
+  },
+  "i": {
+    "prefix": "$(record-small)i",
+    "body": "<i>$1</i>$2",
+    "description": "HTML - 斜体",
+    "scope": "text.html"
+  },
+  "iframe": {
+    "prefix": "$(record-small)iframe",
+    "body": "<iframe src=\"$1\">$2</iframe>$3",
+    "description": "HTML - Defines an inline sub window",
+    "scope": "text.html"
+  },
+  "img": {
+    "prefix": "$(record-small)img",
+    "body": "<img src=\"$1\" alt=\"$2\">",
+    "description": "HTML - Defines an image",
+    "scope": "text.html"
+  },
+  "input": {
+    "prefix": "$(record-small)input",
+    "body": "<input type=\"$1\" name=\"$2\" value=\"$3\">$4",
+    "description": "HTML - Defines an input field",
+    "scope": "text.html"
+  },
+  "ins": {
+    "prefix": "$(record-small)ins",
+    "body": "<ins>$1</ins>$2",
+    "description": "HTML - 下划线",
+    "scope": "text.html"
+  },
+  "keygen": {
+    "prefix": "$(record-small)keygen",
+    "body": "<keygen name=\"$1\">$2",
+    "description": "HTML - Defines a generated key in a form",
+    "scope": "text.html"
+  },
+  "kbd": {
+    "prefix": "$(record-small)kbd",
+    "body": "<kbd>$1</kbd>$2",
+    "description": "HTML - 键盘符",
+    "scope": "text.html"
+  },
+  "label": {
+    "prefix": "$(record-small)label",
+    "body": "<label for=\"$1\">$2</label>$3",
+    "description": "HTML - Defines an inline window",
+    "scope": "text.html"
+  },
+  "legend": {
+    "prefix": "$(record-small)legend",
+    "body": "<legend>$1</legend>$2",
+    "description": "HTML - Defines a title in a fieldset",
+    "scope": "text.html"
+  },
+  "li": {
+    "prefix": "$(record-small)li",
+    "body": "<li>$1</li>$2",
+    "description": "HTML - Defines a list item",
+    "scope": "text.html"
+  },
+  "link:icon": {
+    "prefix": "$(record-small)link",
+    "body": "<link rel=\"icon\" href=\"$3\">",
+    "description": "HTML - Defines a resource reference",
+    "scope": "text.html"
+  },
+  "link:stylesheet": {
+    "prefix": "$(record-small)link",
+    "body": "<link rel=\"stylesheet\" type=\"text/css\" href=\"$3\">",
+    "description": "HTML - Defines a resource reference",
+    "scope": "text.html"
+  },
+  "main": {
+    "prefix": "$(record-small)main",
+    "body": [
+      "<main>",
+      "\t$1",
+      "</main>"
+    ],
+    "description": "HTML - Defines an image map",
+    "scope": "text.html"
+  },
+  "map": {
+    "prefix": "$(record-small)map",
+    "body": [
+      "<map name=\"$1\">",
+      "\t$2",
+      "</map>"
+    ],
+    "description": "HTML - Defines an image map",
+    "scope": "text.html"
+  },
+  "mark": {
+    "prefix": "$(record-small)mark",
+    "body": "<mark>$1</mark>$2",
+    "description": "HTML - 标记",
+    "scope": "text.html"
+  },
+  "menu": {
+    "prefix": "$(record-small)menu",
+    "body": [
+      "<menu>",
+      "\t$1",
+      "</menu>"
+    ],
+    "description": "HTML - Defines a menu list",
+    "scope": "text.html"
+  },
+  "menuitem": {
+    "prefix": "$(record-small)menuitem",
+    "body": "<menuitem>$1</menuitem>$2",
+    "description": "HTML - Defines a menu item [firefox only]",
+    "scope": "text.html"
+  },
+  "meta": {
+    "prefix": "$(record-small)meta",
+    "body": "<meta name=\"$1\" content=\"$2\">$3",
+    "description": "HTML - Defines meta information",
+    "scope": "text.html"
+  },
+  "meta:UTF-8": {
+    "prefix": "$(record-small)meta",
+    "body": "  <meta charset=\"UTF-8\">",
+    "description": "HTML - Defines meta information",
+    "scope": "text.html"
+  },
+  "meta:viewport": {
+    "prefix": "$(record-small)meta",
+    "body": "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1\">",
+    "description": "HTML - Defines meta information",
+    "scope": "text.html"
+  },
+  "meter": {
+    "prefix": "$(record-small)meter",
+    "body": "<meter value=\"$1\">$2</meter>$3",
+    "description": "HTML - Defines measurement within a predefined range",
+    "scope": "text.html"
+  },
+  "nav": {
+    "prefix": "$(record-small)nav",
+    "body": [
+      "<nav>",
+      "\t$1",
+      "</nav>"
+    ],
+    "description": "HTML - Defines navigation links",
+    "scope": "text.html"
+  },
+  "noscript": {
+    "prefix": "$(record-small)noscript",
+    "body": [
+      "<noscript>",
+      "$1",
+      "</noscript>"
+    ],
+    "description": "HTML - Defines a noscript section",
+    "scope": "text.html"
+  },
+  "object": {
+    "prefix": "$(record-small)object",
+    "body": "<object width=\"$1\" height=\"$2\" data=\"$3\">$4</object>$5",
+    "description": "HTML - Defines an embedded object",
+    "scope": "text.html"
+  },
+  "ol": {
+    "prefix": "$(record-small)ol",
+    "body": [
+      "<ol>",
+      "\t$1",
+      "</ol>"
+    ],
+    "description": "HTML - 配合<li>代办列表",
+    "scope": "text.html"
+  },
+  "optgroup": {
+    "prefix": "$(record-small)optgroup",
+    "body": [
+      "<optgroup>",
+      "\t$1",
+      "</optgroup>"
+    ],
+    "description": "HTML - Defines an option group",
+    "scope": "text.html"
+  },
+  "option": {
+    "prefix": "$(record-small)option",
+    "body": "<option value=\"$1\">$2</option>$3",
+    "description": "HTML - Defines an option in a drop-down list",
+    "scope": "text.html"
+  },
+  "output": {
+    "prefix": "$(record-small)output",
+    "body": "<output name=\"$1\" for=\"$2\">$3</output>$4",
+    "description": "HTML - Defines some types of output",
+    "scope": "text.html"
+  },
+  "p": {
+    "prefix": "$(record-small)p",
+    "body": "<p>$1</p>$2",
+    "description": "HTML - Defines a paragraph",
+    "scope": "text.html"
+  },
+  "param": {
+    "prefix": "$(record-small)param",
+    "body": "<param name=\"$1\" value=\"$2\">$3",
+    "description": "HTML - Defines a parameter for an object",
+    "scope": "text.html"
+  },
+  "pre": {
+    "prefix": "$(record-small)pre",
+    "body": ["<pre>$1</pre>"],
+    "description": "HTML - Defines preformatted text",
+    "scope": "text.html"
+  },
+  "progress": {
+    "prefix": "$(record-small)progress",
+    "body": "<progress value=\"$1\" max=\"$2\">$3</progress>$4",
+    "description": "HTML - Defines progress of a task of any kind",
+    "scope": "text.html"
+  },
+  "q": {
+    "prefix": "$(record-small)q",
+    "body": "<q>$1</q>$2",
+    "description": "HTML - Defines a short quotation",
+    "scope": "text.html"
+  },
+  "rp": {
+    "prefix": "$(record-small)rp",
+    "body": "<rp>$1</rp>$2",
+    "description": "HTML - Used in ruby annotations to define what to show browsers that do not support the ruby element",
+    "scope": "text.html"
+  },
+  "rt": {
+    "prefix": "$(record-small)rt",
+    "body": "<rt>$1</rt>$2",
+    "description": "HTML - Defines explanation to ruby annotations",
+    "scope": "text.html"
+  },
+  "ruby": {
+    "prefix": "$(record-small)ruby",
+    "body": [
+      "<ruby>",
+      "$1",
+      "</ruby>"
+    ],
+    "description": "HTML - Defines ruby annotations",
+    "scope": "text.html"
+  },
+  "s": {
+    "prefix": "$(record-small)s",
+    "body": "<s>$1</s>$2",
+    "description": "HTML - Used to define strikethrough text",
+    "scope": "text.html"
+  },
+  "samp": {
+    "prefix": "$(record-small)samp",
+    "body": "<samp>$1</samp>$2",
+    "description": "HTML - Defines sample computer code",
+    "scope": "text.html"
+  },
+  "script": {
+    "prefix": "$(record-small)script",
+    "body": [
+      "<script>",
+      "\t$1",
+      "</script>"
+    ],
+    "description": "HTML - Defines a script",
+    "scope": "text.html"
+  },
+  "section": {
+    "prefix": "$(record-small)section",
+    "body": [
+      "<section>",
+      "\t$1",
+      "</section>"
+    ],
+    "description": "HTML - Defines a section",
+    "scope": "text.html"
+  },
+  "select": {
+    "prefix": "$(record-small)select",
+    "body": [
+      "<select>",
+      "\t$1",
+      "</select>"
+    ],
+    "description": "HTML - Defines a selectable list",
+    "scope": "text.html"
+  },
+  "small": {
+    "prefix": "$(record-small)small",
+    "body": "<small>$1</small>$2",
+    "description": "HTML - Defines small text",
+    "scope": "text.html"
+  },
+  "source": {
+    "prefix": "$(record-small)source",
+    "body": "<source src=\"$1\" type=\"$2\">$3",
+    "description": "HTML - Defines media resource",
+    "scope": "text.html"
+  },
+  "span": {
+    "prefix": "$(record-small)span",
+    "body": "<span>$1</span>$2",
+    "description": "HTML - Defines a section in a document",
+    "scope": "text.html"
+  },
+  "strong": {
+    "prefix": "$(record-small)strong",
+    "body": "<strong>$1</strong>$2",
+    "description": "HTML - Defines strong text",
+    "scope": "text.html"
+  },
+  "style": {
+    "prefix": "$(record-small)style",
+    "body": [
+      "<style>",
+      "$1",
+      "</style>"
+    ],
+    "description": "HTML - Defines a style definition",
+    "scope": "text.html"
+  },
+  "sub": {
+    "prefix": "$(record-small)sub",
+    "body": "<sub>$1</sub>$2",
+    "description": "HTML - Defines sub-scripted text",
+    "scope": "text.html"
+  },
+  "sup": {
+    "prefix": "$(record-small)sup",
+    "body": "<sup>$1</sup>$2",
+    "description": "HTML - Defines super-scripted text",
+    "scope": "text.html"
+  },
+  "summary": {
+    "prefix": "$(record-small)summary",
+    "body": "<summary>$1</summary>$2",
+    "description": "HTML - Defines a visible heading for the detail element [limited support]",
+    "scope": "text.html"
+  },
+  "table": {
+    "prefix": "$(record-small)table",
+    "body": [
+      "<table>",
+      "\t$1",
+      "</table>"
+    ],
+    "description": "HTML - Defines a table",
+    "scope": "text.html"
+  },
+  "tbody": {
+    "prefix": "$(record-small)tbody",
+    "body": [
+      "<tbody>",
+      "\t$1",
+      "</tbody>"
+    ],
+    "description": "HTML - Defines a table body",
+    "scope": "text.html"
+  },
+  "td": {
+    "prefix": "$(record-small)td",
+    "body": "<td>$1</td>$2",
+    "description": "HTML - Defines a table cell",
+    "scope": "text.html"
+  },
+  "textarea": {
+    "prefix": "$(record-small)textarea",
+    "body": "<textarea rows=\"$1\" cols=\"$2\">$3</textarea>$4",
+    "description": "HTML - Defines a text area",
+    "scope": "text.html"
+  },
+  "tfoot": {
+    "prefix": "$(record-small)tfoot",
+    "body": [
+      "<tfoot>",
+      "\t$1",
+      "</tfoot>"
+    ],
+    "description": "HTML - Defines a table footer",
+    "scope": "text.html"
+  },
+  "thead": {
+    "prefix": "$(record-small)thead",
+    "body": [
+      "<thead>",
+      "$1",
+      "</thead>"
+    ],
+    "description": "HTML - Defines a table head",
+    "scope": "text.html"
+  },
+  "th": {
+    "prefix": "$(record-small)th",
+    "body": "<th>$1</th>$2",
+    "description": "HTML - Defines a table header",
+    "scope": "text.html"
+  },
+  "time": {
+    "prefix": "$(record-small)time",
+    "body": "<time datetime=\"$1\">$2</time>$3",
+    "description": "HTML - Defines a date/time",
+    "scope": "text.html"
+  },
+  "title": {
+    "prefix": "$(record-small)title",
+    "body": "<title>$1</title>$2",
+    "description": "HTML - Defines the document title",
+    "scope": "text.html"
+  },
+  "tr": {
+    "prefix": "$(record-small)tr",
+    "body": "<tr>$1</tr>$2",
+    "description": "HTML - Defines a table row",
+    "scope": "text.html"
+  },
+  "track": {
+    "prefix": "$(record-small)track",
+    "body": "<track src=\"$1\" kind=\"$2\" srclang=\"$3\" label=\"$4\">$5",
+    "description": "HTML - Defines a table row",
+    "scope": "text.html"
+  },
+  "u": {
+    "prefix": "$(record-small)u",
+    "body": "<u>$1</u>$2",
+    "description": "HTML - Used to define underlined text",
+    "scope": "text.html"
+  },
+  "ul": {
+    "prefix": "$(record-small)ul",
+    "body": [
+      "<ul>",
+      "\t$1",
+      "</ul>"
+    ],
+    "description": "HTML - Defines an unordered list",
+    "scope": "text.html"
+  },
+  "var": {
+    "prefix": "$(record-small)var",
+    "body": "<var>$1</var>$2",
+    "description": "HTML - Defines a variable",
+    "scope": "text.html"
+  },
+  "video": {
+    "prefix": "$(record-small)video",
+    "body": [
+      "<video width=\"$1\" height=\"$2\" controls>",
+      "\t$3",
+      "</video>"
+    ],
+    "description": "HTML - Defines a video",
+    "scope": "text.html"
+  }
+}

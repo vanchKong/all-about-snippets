@@ -1,20 +1,86 @@
 {
-	"name": "snippets",
-	"displayName": "all-snippets",
-	"description": "snippets",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.75.0"
-	},
-	"categories": [
-		"Snippets"
-	],
-	"contributes": {
-		"snippets": [
-			{
-				"language": "vue",
-				"path": "./snippets/vue.json"
-			}
-		]
-	}
+  "name": "snippets",
+  "displayName": "all-about-snippets",
+  "description": "vue2/3 snippets",
+  "icon": "public/logo.png",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "vanch",
+    "email": "vanchkong@qq.com",
+    "url": "https://github.com/VanchKong"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "vue",
+    "vue2",
+    "vue3",
+    "vuejs",
+    "vue.js",
+    "composition-api",
+    "composition",
+    "html",
+    "javascript"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vue",
+        "aliases": [
+          "Vue",
+          "vue"
+        ],
+        "extensions": [
+          ".vue"
+        ],
+        "configuration": "./languages/vue-language-configuration.json"
+      },
+      {
+        "id": "vue-html",
+        "aliases": [
+          "Vue-html"
+        ],
+        "configuration": "./languages/vue-html-language-configuration.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue-html.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-js.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/base/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/base/javascript.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/base/html.json"
+      },
+      {
+        "language": "jade",
+        "path": "./snippets/pug.json"
+      }
+    ]
+  }
 }

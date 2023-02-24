@@ -1,0 +1,651 @@
+{
+	"align-items": {
+		"prefix": "$(record-small)ai",
+		"body": "align-items: ${1|flex-start,flex-end,center,baseline,stretch,start,end,self-start,self-end|};",
+		"description": "initial value: stretch"
+	},
+	"align-items: baseline": {
+		"prefix": "$(record-small)aib",
+		"body": "align-items: baseline;"
+	},
+	"align-items: center": {
+		"prefix": "$(record-small)aic",
+		"body": "align-items: center;"
+	},
+	"align-items: flex-start": {
+		"prefix": "$(record-small)aifs",
+		"body": "align-items: flex-start;"
+	},
+	"align-items: flex-end": {
+		"prefix": "$(record-small)aife",
+		"body": "align-items: flex-end;"
+	},
+	"align-items: stretch": {
+		"prefix": "$(record-small)ais",
+		"body": "align-items: stretch;"
+	},
+	"align-self": {
+		"prefix": "$(record-small)as",
+		"body": "align-items: ${1|flex-start,flex-end,center,baseline,stretch,auto|};",
+		"description": "initial value: auto"
+	},
+	"animation": {
+		"prefix": "$(record-small)ani",
+		"body": "animation: ${1:name} ${2:1s} ${3|linear,ease-in-out,ease,ease-in,ease-out,step-start,step-end,steps,cubic-bezier|};",
+		"description": "animation: name duration timing-function delay direction count fill-mode play-state"
+	},
+	"animation-delay": {
+		"prefix": "$(record-small)anide",
+		"body": "animation-delay: ${0:1s};"
+	},
+	"animation-direction": {
+		"prefix": "$(record-small)anidi",
+		"body": "animation-direction: ${1|alternate,alternate-reverse,reverse,normal|};",
+		"description": "initial value: normal"
+	},
+	"animation-duratuion": {
+		"prefix": "$(record-small)anidu",
+		"body": "animation-duration: ${0:1s};"
+	},
+	"animation-fill-mode": {
+		"prefix": "$(record-small)anifm",
+		"body": "animation-fill-mode: ${1|forwards,backwards,both,none|};",
+		"description": "initial value: none"
+	},
+	"animation-iteration-count": {
+		"prefix": "$(record-small)aniic",
+		"body": "animation-iteration-count: ${0:infinite};",
+		"description": "initial value: 1"
+	},
+	"animation-name": {
+		"prefix": "$(record-small)anin",
+		"body": "animation-name: ${0:name};"
+	},
+	"animation-play-state": {
+		"prefix": "$(record-small)anips",
+		"body": "animation-play-state: ${1|paused,running|};",
+		"description": "initial value: running"
+	},
+	"animation-timing-function": {
+		"prefix": "$(record-small)anitf",
+		"body": "animation-timing-function: ${1|linear,ease,ease-in-out,ease-in,ease-out,step-start,step-end,steps,cubic-bezier|};",
+		"description": "initial value: ease"
+	},
+	"background": {
+		"prefix": "$(record-small)bg",
+		"body": "background: ${0:#fff};",
+		"description": "background: image position/size repeat attachment box box"
+	},
+	"background-attachment": {
+		"prefix": "$(record-small)bga",
+		"body": "background-attachment: ${1|fixed,scroll,local|};",
+		"description": "initial value: scroll"
+	},
+	"background-color": {
+		"prefix": "$(record-small)bgc",
+		"body": "background-color: ${0:#fff};"
+	},
+	"background-clip": {
+		"prefix": "$(record-small)bgcl",
+		"body": "background-clip: ${1|border-box,padding-box,content-box,text|};",
+		"description": "initial value: border-box"
+	},
+	"background-image": {
+		"prefix": "$(record-small)bgi",
+		"body": "background-image: url('${0:background.jpg}');"
+	},
+	"background-origin": {
+		"prefix": "$(record-small)bgo",
+		"body": "background-origin: ${1|border-box,padding-box,content-box|};",
+		"description": "initial value: padding-box"
+	},
+	"background-position": {
+		"prefix": "$(record-small)bgp",
+		"body": "background-position: ${1:left} ${2:top};"
+	},
+	"background-repeat": {
+		"prefix": "$(record-small)bgr",
+		"body": "background-repeat: ${1|no-repeat,repeat-x,repeat-y,repeat,space,round|};",
+		"description": "initial value: repeat"
+	},
+	"background-repeat: repeat": {
+		"prefix": "$(record-small)bgrr",
+		"body": "background-repeat: repeat;"
+	},
+	"background-repeat: repeat-x": {
+		"prefix": "$(record-small)bgrx",
+		"body": "background-repeat: repeat-x;"
+	},
+	"background-repeat: repeat-y": {
+		"prefix": "$(record-small)bgry",
+		"body": "background-repeat: repeat-y;"
+	},
+	"background-repeat: no-repeat": {
+		"prefix": "$(record-small)bgrn",
+		"body": "background-repeat: no-repeat;"
+	},
+	"background-size": {
+		"prefix": "$(record-small)bgs",
+		"body": "background-size: ${0:cover};"
+	},
+	"border": {
+		"prefix": "$(record-small)bor",
+		"body": "border: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${0:#000};"
+	},
+	"border: none": {
+		"prefix": "$(record-small)born",
+		"body": "border: none;"
+	},
+	"border-color": {
+		"prefix": "$(record-small)borc",
+		"body": "border-color: ${0:#000};"
+	},
+	"border-style": {
+		"prefix": "$(record-small)bors",
+		"body": "border-style: ${1|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|};"
+	},
+	"border-width": {
+		"prefix": "$(record-small)borw",
+		"body": "border-width: ${0:1px};"
+	},
+	"border-bottom": {
+		"prefix": "$(record-small)borb",
+		"body": "border-bottom: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${0:#000};"
+	},
+	"border-left": {
+		"prefix": "$(record-small)borl",
+		"body": "border-left: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${0:#000};"
+	},
+	"border-right": {
+		"prefix": "$(record-small)borr",
+		"body": "border-right: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${0:#000};"
+	},
+	"border-top": {
+		"prefix": "$(record-small)bort",
+		"body": "border-top: ${1:1px} ${2|solid,dashed,dotted,double,groove,ridge,inset,outset,none,hidden|} ${0:#000};"
+	},
+	"border-radius": {
+		"prefix": "$(record-small)br",
+		"body": "border-radius: ${0:2px};"
+	},
+	"bottom": {
+		"prefix": "$(record-small)bot",
+		"body": "bottom: ${0:0};"
+	},
+	"box-shadow": {
+		"prefix": "$(record-small)bos",
+		"body": "box-shadow: ${1:1px} ${2:1px} ${3:1px} ${4:1px} ${0:rgba(0, 0, 0, .5)};",
+		"description": "box-shadow: x-offset y-offset blur spread color"
+	},
+	"box-sizing": {
+		"prefix": "$(record-small)boz",
+		"body": "box-sizing: ${1|border-box,content-box|};",
+		"description": "initial value: content-box"
+	},
+	"clear": {
+		"prefix": "$(record-small)clr",
+		"body": "clear: ${1|both,left,right,none|};"
+	},
+	"color": {
+		"prefix": "$(record-small)col",
+		"body": "color: ${0:#000};"
+	},
+	"content": {
+		"prefix": "$(record-small)con",
+		"body": "content: '$0';"
+	},
+	"cursor": {
+		"prefix": "$(record-small)cur",
+		"body": "cursor: ${1|auto,default,alias,cell,copy,crosshair,context-menu,help,grab,grabbing,move,none,no-drop,not-allowed,pointer,progress,e-resize,all-scroll,text,wait,vertical-text,zoom-in,zoom-out|};",
+		"description": "initial value: auto"
+	},
+	"cursor: pointer": {
+		"prefix": "$(record-small)curp",
+		"body": "cursor: pointer;"
+	},
+	"cursor: default": {
+		"prefix": "$(record-small)curd",
+		"body": "cursor: default;"
+	},
+	"display": {
+		"prefix": "$(record-small)dis",
+		"body": "display: ${1|none,block,inline,inline-block,flex,inline-flex,list-item,table,inline-table,table-caption,table-cell,table-row,table-row-group,table-column|};"
+	},
+	"display: block": {
+		"prefix": "$(record-small)disb",
+		"body": "display: block;"
+	},
+	"display: inline-block": {
+		"prefix": "$(record-small)disi",
+		"body": "display: inline-block;"
+	},
+	"display: none": {
+		"prefix": "$(record-small)disn",
+		"body": "display: none;"
+	},
+	"display: flex": {
+		"prefix": "$(record-small)disf",
+		"body": "display: flex;"
+	},
+	"flex": {
+		"prefix": "$(record-small)flex",
+		"body": "flex: ${1:1} ${2:1} ${3:auto};",
+		"description": "flex: grow shrink basis"
+	},
+	"flex (alt)": {
+		"prefix": "$(record-small)fle",
+		"body": "flex: ${1:1} ${2:1} ${3:auto};"
+	},
+	"flex-direction": {
+		"prefix": "$(record-small)fld",
+		"body": "flex-direction: ${1|row,row-reverse,column,column-reverse|};",
+		"description": "initial value: row"
+	},
+	"flex-direction: row": {
+		"prefix": "$(record-small)fldr",
+		"body": "flex-direction: row;"
+	},
+	"flex-direction: column": {
+		"prefix": "$(record-small)fldc",
+		"body": "flex-direction: column;"
+	},
+	"flex-flow": {
+		"prefix": "$(record-small)flf",
+		"body": "flex-flow: ${1|row,row-reverse,column,column-reverse|} ${2|wrap,wrap-reverse,nowrap|};"
+	},
+	"flex-wrap": {
+		"prefix": "$(record-small)flw",
+		"body": "flex-wrap: ${1|wrap,wrap-reverse,nowrap|};",
+		"description": "initial value: nowrap"
+	},
+	"float": {
+		"prefix": "$(record-small)fl",
+		"body": "float: ${1|left,right,none|};"
+	},
+	"float: left": {
+		"prefix": "$(record-small)fll",
+		"body": "float: left;"
+	},
+	"float: right": {
+		"prefix": "$(record-small)flr",
+		"body": "float: right;"
+	},
+	"float: none": {
+		"prefix": "$(record-small)fln",
+		"body": "float: none;"
+	},
+	"font-family": {
+		"prefix": "$(record-small)ff",
+		"body": "font-family: ${0:arial};"
+	},
+	"font-size": {
+		"prefix": "$(record-small)fz",
+		"body": "font-size: ${0:12px};"
+	},
+	"font-style": {
+		"prefix": "$(record-small)fst",
+		"body": "font-style: ${1|italic,oblique,normal|};"
+	},
+	"font-style: italic": {
+		"prefix": "$(record-small)fsti",
+		"body": "font-style: italic;"
+	},
+	"font-style: normal": {
+		"prefix": "$(record-small)fstn",
+		"body": "font-style: normal;"
+	},
+	"font-style: oblique": {
+		"prefix": "$(record-small)fsto",
+		"body": "font-style: oblique;"
+	},
+	"font-weight": {
+		"prefix": "$(record-small)fw",
+		"body": "font-weight: ${0:bold};"
+	},
+	"font-weight: bold": {
+		"prefix": "$(record-small)fwb",
+		"body": "font-weight: bold;"
+	},
+	"font-weight: light": {
+		"prefix": "$(record-small)fwl",
+		"body": "font-weight: light;"
+	},
+	"font-weight: normal": {
+		"prefix": "$(record-small)fwn",
+		"body": "font-weight: normal;"
+	},
+	"font": {
+		"prefix": "$(record-small)ft",
+		"body": "font: ${0:12px/1.5};",
+		"description": "font: [weight style variant stretch] size/line-height family"
+	},
+	"height": {
+		"prefix": "$(record-small)hei",
+		"body": "height: ${0:1px};"
+	},
+	"justify-content": {
+		"prefix": "$(record-small)jc",
+		"body": "justify-content: ${1|flex-start,flex-end,center,space-between,space-around|};",
+		"description": "initial value: flex-start"
+	},
+	"justify-content: flex-start": {
+		"prefix": "$(record-small)jcfs",
+		"body": "justify-content: flex-start;"
+	},
+	"justify-content: flex-end": {
+		"prefix": "$(record-small)jcfe",
+		"body": "justify-content: flex-end;"
+	},
+	"justify-content: center": {
+		"prefix": "$(record-small)jcc",
+		"body": "justify-content: center;"
+	},
+	"justify-content: space-around": {
+		"prefix": "$(record-small)jcsa",
+		"body": "justify-content: space-around;"
+	},
+	"justify-content: space-between": {
+		"prefix": "$(record-small)jcsb",
+		"body": "justify-content: space-between;"
+	},
+	"list-style": {
+		"prefix": "$(record-small)lis",
+		"body": "list-style: ${1|disc,circle,square,decimal,lower-roman,upper-roman,lower-alpha,upper-alpha,none,armenian,cjk-ideographic,georgian,lower-greek,hebrew,hiragana,hiragana-iroha,katakana,katakana-iroha,lower-latin,upper-latin|} ${2|outside,inside|};",
+		"description": "list-style: type position image"
+	},
+	"list-style-position": {
+		"prefix": "$(record-small)lisp",
+		"body": "${1|outside,inside|}",
+		"description": "initial value: outside"
+	},
+	"list-style-type": {
+		"prefix": "$(record-small)list",
+		"body": "list-style-type: ${1|disc,circle,square,decimal,lower-roman,upper-roman,lower-alpha,upper-alpha,none,armenian,cjk-ideographic,georgian,lower-greek,hebrew,hiragana,hiragana-iroha,katakana,katakana-iroha,lower-latin,upper-latin|};",
+		"description": "initial value: disc"
+	},
+	"list-style-type: circle": {
+		"prefix": "$(record-small)listc",
+		"body": "list-style-type: circle;"
+	},
+	"list-style-type: disc": {
+		"prefix": "$(record-small)listd",
+		"body": "list-style-type: disc;"
+	},
+	"list-style-type: none": {
+		"prefix": "$(record-small)listn",
+		"body": "list-style-type: none;"
+	},
+	"list-style-type: square": {
+		"prefix": "$(record-small)lists",
+		"body": "list-style-type: square;"
+	},
+	"list-style-type: lower-roman": {
+		"prefix": "$(record-small)listlr",
+		"body": "list-style-type: lower-roman;"
+	},
+	"list-style-type: upper-roman": {
+		"prefix": "$(record-small)listur",
+		"body": "list-style-type: upper-roman;"
+	},
+	"left": {
+		"prefix": "$(record-small)lef",
+		"body": "left: ${0:0};"
+	},
+	"line-height": {
+		"prefix": "$(record-small)lh",
+		"body": "line-height: ${0:1.5};"
+	},
+	"letter-spacing": {
+		"prefix": "$(record-small)ls",
+		"body": "letter-spacing: ${0:2px};"
+	},
+	"letter-spacing: normal": {
+		"prefix": "$(record-small)lsn",
+		"body": "letter-spacing: normal;"
+	},
+	"margin": {
+		"prefix": "$(record-small)mar",
+		"body": "margin: ${0:0};"
+	},
+	"margin-bottom": {
+		"prefix": "$(record-small)marb",
+		"body": "margin-bottom: ${0:0};"
+	},
+	"margin-left": {
+		"prefix": "$(record-small)marl",
+		"body": "margin-left: ${0:0};"
+	},
+	"margin-right": {
+		"prefix": "$(record-small)marr",
+		"body": "margin-right: ${0:0};"
+	},
+	"margin-top": {
+		"prefix": "$(record-small)mart",
+		"body": "margin-top: ${0:0};"
+	},
+	"margin: 0 auto": {
+		"prefix": "$(record-small)mara",
+		"body": "margin: 0 auto;"
+	},
+	"min-height": {
+		"prefix": "$(record-small)mih",
+		"body": "min-height: ${0:1px};"
+	},
+	"min-width": {
+		"prefix": "$(record-small)miw",
+		"body": "min-width: ${0:1px};"
+	},
+	"max-height": {
+		"prefix": "$(record-small)mah",
+		"body": "max-height: ${0:1px};"
+	},
+	"max-width": {
+		"prefix": "$(record-small)maw",
+		"body": "max-width: ${0:1px};"
+	},
+	"opacity": {
+		"prefix": "$(record-small)opa",
+		"body": "opacity: ${0:0};"
+	},
+	"overflow": {
+		"prefix": "$(record-small)ov",
+		"body": "overflow: ${1|visible,hidden,scroll,auto,clip|};"
+	},
+	"overflow: auto": {
+		"prefix": "$(record-small)ova",
+		"body": "overflow: auto;"
+	},
+	"overflow: hidden": {
+		"prefix": "$(record-small)ovh",
+		"body": "overflow: hidden;"
+	},
+	"overflow: scroll": {
+		"prefix": "$(record-small)ovs",
+		"body": "overflow: scroll;"
+	},
+	"overflow: visible": {
+		"prefix": "$(record-small)ovv",
+		"body": "overflow: visible;"
+	},
+	"padding": {
+		"prefix": "$(record-small)pad",
+		"body": "padding: ${0:0};"
+	},
+	"padding-bottom": {
+		"prefix": "$(record-small)padb",
+		"body": "padding-bottom: ${0:0};"
+	},
+	"padding-left": {
+		"prefix": "$(record-small)padl",
+		"body": "padding-left: ${0:0};"
+	},
+	"padding-right": {
+		"prefix": "$(record-small)padr",
+		"body": "padding-right: ${0:0};"
+	},
+	"padding-top": {
+		"prefix": "$(record-small)padt",
+		"body": "padding-top: ${0:0};"
+	},
+	"position": {
+		"prefix": "$(record-small)pos",
+		"body": "position: ${1|relative,absolute,fixed,sticky,static|};"
+	},
+	"position absolute": {
+		"prefix": "$(record-small)posa",
+		"body": "position: absolute;"
+	},
+	"position fixed": {
+		"prefix": "$(record-small)posf",
+		"body": "position: fixed;"
+	},
+	"position relative": {
+		"prefix": "$(record-small)posr",
+		"body": "position: relative;"
+	},
+	"position sticky": {
+		"prefix": "$(record-small)poss",
+		"body": "position: sticky;"
+	},
+	"right": {
+		"prefix": "$(record-small)rig",
+		"body": "right: ${0:0};"
+	},
+	"text-align": {
+		"prefix": "$(record-small)ta",
+		"body": "text-align: ${1|center,left,right,justify,start,end|};"
+	},
+	"text-align: center": {
+		"prefix": "$(record-small)tac",
+		"body": "text-align: center;"
+	},
+	"text-align: left": {
+		"prefix": "$(record-small)tal",
+		"body": "text-align: left;"
+	},
+	"text-align: right": {
+		"prefix": "$(record-small)tar",
+		"body": "text-align: right;"
+	},
+	"text-decoration": {
+		"prefix": "$(record-small)td",
+		"body": "text-decoration: ${1|none,underline,overline,line-through|};"
+	},
+	"text-decoration: underline": {
+		"prefix": "$(record-small)tdu",
+		"body": "text-decoration: underline;"
+	},
+	"text-decoration: none": {
+		"prefix": "$(record-small)tdn",
+		"body": "text-decoration: none;"
+	},
+	"text-decoration: line-through": {
+		"prefix": "$(record-small)tdl",
+		"body": "text-decoration: line-through;"
+	},
+	"text-indent": {
+		"prefix": "$(record-small)ti",
+		"body": "text-indent: ${0:2em};"
+	},
+	"text-shadow": {
+		"prefix": "$(record-small)ts",
+		"body": "text-shadow: ${1:1px} ${2:1px} ${3:1px} ${4:1px} ${0:rgba(0, 0, 0, .5)};",
+		"description": "text-shadow: x-offset y-offset blur spread color"
+	},
+	"text-transform": {
+		"prefix": "$(record-small)tt",
+		"body": "text-transform: ${1|capitalize,uppercase,lowercase,full-width,none|};"
+	},
+	"top": {
+		"prefix": "$(record-small)top",
+		"body": "top: ${0:0};"
+	},
+	"vertical-align": {
+		"prefix": "$(record-small)va",
+		"body": "vertical-align: ${1|baseline,middle,top,bottom,sub,super,text-top,text-bottom|};"
+	},
+	"vertical-align: bottom": {
+		"prefix": "$(record-small)vab",
+		"body": "vertical-align: bottom;"
+	},
+	"vertical-align: middle": {
+		"prefix": "$(record-small)vam",
+		"body": "vertical-align: middle;"
+	},
+	"vertical-align: top": {
+		"prefix": "$(record-small)vat",
+		"body": "vertical-align: top;"
+	},
+	"visibility": {
+		"prefix": "$(record-small)vis",
+		"body": "visibility: ${1|visible,hidden,collapse|};"
+	},
+	"visibility: visible": {
+		"prefix": "$(record-small)visv",
+		"body": "visibility: visible;"
+	},
+	"visibility: hidden": {
+		"prefix": "$(record-small)vish",
+		"body": "visibility: hidden;"
+	},
+	"word-break": {
+		"prefix": "$(record-small)wb",
+		"body": "word-break: ${1|break-all,keep-all,break-word,normal|};"
+	},
+	"width": {
+		"prefix": "$(record-small)wid",
+		"body": "width: ${0:0};"
+	},
+	"width: auto": {
+		"prefix": "$(record-small)wida",
+		"body": "width: auto;"
+	},
+	"white-space": {
+		"prefix": "$(record-small)ws",
+		"body": "white-space: ${1|nowrap,pre,pre-wrap,pre-line,normal|};"
+	},
+	"white-space: nowrap": {
+		"prefix": "$(record-small)wsn",
+		"body": "white-space: nowrap;"
+	},
+	"white-space: pre": {
+		"prefix": "$(record-small)wsp",
+		"body": "white-space: pre;"
+	},
+	"word-wrap": {
+		"prefix": "$(record-small)ww",
+		"body": "word-wrap: ${1|break-word,break-spaces,normal|};"
+	},
+	"z-index": {
+		"prefix": "$(record-small)zi",
+		"body": "z-index: ${0:-1};"
+	},
+	"@import": {
+		"prefix": "$(record-small)imp",
+		"body": "@import '${0:filename}';"
+	},
+	"@mixin": {
+		"prefix": "$(record-small)mix",
+		"body": "@mixin ${1:name} {\n  $0\n}"
+	},
+	"@include": {
+		"prefix": "$(record-small)inc",
+		"body": "@include ${0:mixin};"
+	},
+	"@keyframes": {
+		"prefix": "$(record-small)key",
+		"body": "@keyframes ${1:name} {\n  $0\n}"
+	},
+	"@media": {
+		"prefix": "$(record-small)med",
+		"body": "@media screen and (${1:max-width: 300px}) {\n  $0\n}"
+	},
+	"!important": {
+		"prefix": "$(record-small)!",
+		"body": "!important"
+	},
+	"!important (alt)": {
+		"prefix": "$(record-small)i",
+		"body": "!important"
+	}
+}
