@@ -43,7 +43,8 @@
       {
         "id": "vue-html",
         "aliases": [
-          "Vue-html"
+          "Vue-html",
+          "vue-html"
         ],
         "configuration": "./languages/vue-html-language-configuration.json"
       }
@@ -61,15 +62,9 @@
           "source.css": "css",
           "source.css.scss": "scss",
           "source.css.less": "less",
-          "source.css.postcss": "vue-postcss",
           "source.js": "javascript",
           "source.ts": "typescript"
         }
-      },
-      {
-        "language": "vue-postcss",
-        "scopeName": "source.css.postcss",
-        "path": "./syntaxes/vue-postcss.json"
       },
       {
         "language": "vue-html",
