@@ -27,6 +27,15 @@
     "html",
     "javascript"
   ],
+  "homepage": "https://github.com/vanchkong/vue-snippets#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanchkong/vue-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/vanchkong/vue-snippets/issues",
+    "email": "vanchkong@qq.com"
+  },
   "contributes": {
     "snippets": [
       {
