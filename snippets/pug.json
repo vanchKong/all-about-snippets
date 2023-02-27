@@ -1,119 +1,119 @@
 {
-  "v-text": {
-    "prefix": "$(record-small)vText",
-    "body": [
-      "v-text=\"${1:msg}\""
-    ],
-    // "scope": "",
-    "description": "Expects: string"
-  },
-  "v-html": {
-    "prefix": "$(record-small)vHtml",
-    "body": [
-      "v-html=\"${1:html}\""
-    ],
-    "description": "Expects: string"
-  },
-  "v-show": {
-    "prefix": "$(record-small)vShow",
-    "body": [
-      "v-show=\"${1:condition}\""
-    ],
-    "description": "Expects: any"
-  },
-  "v-if": {
-    "prefix": "$(record-small)vIf",
-    "body": [
-      "v-if=\"${1:condition}\""
-    ],
-    "description": "Expects: any"
-  },
-  "v-else": {
-    "prefix": "$(record-small)vElse",
-    "body": ["v-else"],
-    "description": "前一个兄弟元素必须有 v-if 或 v-else-if"
-  },
-  "v-else-if": {
-    "prefix": "$(record-small)vElseIf",
-    "body": [
-      "v-else-if=\"${1:condition}\""
-    ],
-    "description": "Expects: any. previous sibling element must have v-if or v-else-if."
-  },
-  "v-for-without-key": {
-    "prefix": "$(record-small)vForWithoutKey",
-    "body": [
-      "v-for=\"${1:item} in ${2:items}\""
-    ],
-    "description": "Expects: Array | Object | number | string"
-  },
+  // "v-text": {
+  //   "prefix": "$(record-small)v-text",
+  //   "body": [
+  //     "v-text=\"${1}\""
+  //   ],
+  //   // "scope": "",
+  //   "description": "Expects: string"
+  // },
+  // "v-html": {
+  //   "prefix": "$(record-small)v-html",
+  //   "body": [
+  //     "v-html=\"${1}\""
+  //   ],
+  //   "description": "Expects: string"
+  // },
+  // "v-show": {
+  //   "prefix": "$(record-small)v-show",
+  //   "body": [
+  //     "v-show=\"${1}\""
+  //   ],
+  //   "description": "Expects: any"
+  // },
+  // "v-if": {
+  //   "prefix": "$(record-small)v-if",
+  //   "body": [
+  //     "v-if=\"${1}\""
+  //   ],
+  //   "description": "Expects: any"
+  // },
+  // "v-else": {
+  //   "prefix": "$(record-small)v-else",
+  //   "body": ["v-else"],
+  //   "description": "前一个兄弟元素必须有 v-if 或 v-else-if"
+  // },
+  // "v-else-if": {
+  //   "prefix": "$(record-small)v-else-if",
+  //   "body": [
+  //     "v-else-if=\"${1:condition}\""
+  //   ],
+  //   "description": "Expects: any. previous sibling element must have v-if or v-else-if."
+  // },
+  // "v-for-without-key": {
+  //   "prefix": "$(record-small)vForWithoutKey",
+  //   "body": [
+  //     "v-for=\"${1:item} in ${2:items}\""
+  //   ],
+  //   "description": "Expects: Array | Object | number | string"
+  // },
   "v-for": {
-    "prefix": "$(record-small)vFor",
+    "prefix": "$(record-small)v-for",
     "body": [
-      "v-for=\"${1:item} in ${2:items}\" :key=\"${3:item.id}\""
+      "v-for=\"(item, index) in ${2:Object}\" :key=\"index\""
     ],
     "description": "Expects: Array | Object | number | string"
   },
-  "v-on": {
-    "prefix": "$(record-small)vOn",
-    "body": [
-      "v-on:${1:event}=\"${2:handle}\""
-    ],
-    "description": "Expects: Function | Inline Statement"
-  },
-  "v-bind": {
-    "prefix": "$(record-small)vBind",
-    "body": [
-      "v-bind$1=\"${2}\""
-    ],
-    "description": "Expects: any (with argument) | Object (without argument)"
-  },
-  "v-model": {
-    "prefix": "$(record-small)vModel",
-    "body": [
-      "v-model=\"${1:something}\""
-    ],
-    "description": "Expects: varies based on value of form inputs element or output of components"
-  },
-  "v-pre": {
-    "prefix": "$(record-small)vPre",
-    "body": ["v-pre"],
-    "description": "Does not expect expression"
-  },
-  "v-cloak": {
-    "prefix": "$(record-small)vCloak",
-    "body": ["v-cloak"],
-    "description": "Does not expect expression"
-  },
-  "v-once": {
-    "prefix": "$(record-small)vOnce",
-    "body": ["v-once"],
-    "description": "Does not expect expression"
-  },
-  "key": {
-    "prefix": "$(record-small)key",
-    "body": [
-      ":key=\"${1:key}\""
-    ],
-    "description": "Expects: string. Children of the same common parent must have unique keys. Duplicate keys will cause render errors."
-  },
-  "ref": {
-    "prefix": "$(record-small)ref",
-    "body": [
-      "ref=\"${1:reference}\"$0"
-    ],
-    "description": "Expects: string. ref is used to register a reference to an element or a child component. The reference will be registered under the parent component’s $refs object. If used on a plain DOM element, the reference will be that element; if used on a child component, the reference will be component instance."
-  },
-  "slotA": {
-    "prefix": "$(record-small)slotA",
-    "body": ["slot=\"$1\"$0"],
-    "description": "slot=''. Expects: string. Used on content inserted into child components to indicate which named slot the content belongs to."
-  },
-  "slotE": {
-    "prefix": "$(record-small)slotE",
-    "body": ["slot"],
-    "description": "<slot></slot>. Expects: string. Used on content inserted into child components to indicate which named slot the content belongs to."
-  },
+  // "v-on": {
+  //   "prefix": "$(record-small)vOn",
+  //   "body": [
+  //     "v-on:${1:event}=\"${2:handle}\""
+  //   ],
+  //   "description": "Expects: Function | Inline Statement"
+  // },
+  // "v-bind": {
+  //   "prefix": "$(record-small)v-bind",
+  //   "body": [
+  //     "v-bind$1=\"${2}\""
+  //   ],
+  //   "description": "Expects: any (with argument) | Object (without argument)"
+  // },
+  // "v-model": {
+  //   "prefix": "$(record-small)v-model",
+  //   "body": [
+  //     "v-model=\"${1}\""
+  //   ],
+  //   "description": "Expects: varies based on value of form inputs element or output of components"
+  // },
+  // "v-pre": {
+  //   "prefix": "$(record-small)v-pre",
+  //   "body": ["v-pre"],
+  //   "description": "Does not expect expression"
+  // },
+  // "v-cloak": {
+  //   "prefix": "$(record-small)v-cloak",
+  //   "body": ["v-cloak"],
+  //   "description": "Does not expect expression"
+  // },
+  // "v-once": {
+  //   "prefix": "$(record-small)v-once",
+  //   "body": ["v-once"],
+  //   "description": "Does not expect expression"
+  // },
+  // "key": {
+  //   "prefix": "$(record-small):key",
+  //   "body": [
+  //     ":key=\"${1:key}\""
+  //   ],
+  //   "description": "Expects: string. Children of the same common parent must have unique keys. Duplicate keys will cause render errors."
+  // },
+  // "ref": {
+  //   "prefix": "$(record-small)ref",
+  //   "body": [
+  //     "ref=\"${1:reference}\"$0"
+  //   ],
+  //   "description": "Expects: string. ref is used to register a reference to an element or a child component. The reference will be registered under the parent component’s $refs object. If used on a plain DOM element, the reference will be that element; if used on a child component, the reference will be component instance."
+  // },
+  // "slotA": {
+  //   "prefix": "$(record-small)slotA",
+  //   "body": ["slot=\"$1\"$0"],
+  //   "description": "slot=''. Expects: string. Used on content inserted into child components to indicate which named slot the content belongs to."
+  // },
+  // "slotE": {
+  //   "prefix": "$(record-small)slotE",
+  //   "body": ["slot"],
+  //   "description": "<slot></slot>. Expects: string. Used on content inserted into child components to indicate which named slot the content belongs to."
+  // },
   "slotScope": {
     "prefix": "$(record-small)slotScope",
     "body": [
@@ -131,24 +131,28 @@
   "component": {
     "prefix": "$(record-small)component",
     "body": [
-      "component(:is=\"${1:componentId}\") $0"
+      "<component :is=\"${0:componentId}\" />"
     ],
     "description": "component element"
   },
   "keep-alive": {
-    "prefix": "$(record-small)keepAlive",
-    "body": ["keep-alive$0"],
+    "prefix": "$(record-small)keep-alive",
+    "body": [
+      "<keep-alive>\n\t$0\n</keep-alive>"
+    ],
     "description": "keep-alive element"
   },
   "transition": {
     "prefix": "$(record-small)transition",
-    "body": ["transition$0"],
+    "body": [
+      "<transition>\n\t$0\n</transition>"
+    ],
     "description": "transition element"
   },
   "transition-group": {
-    "prefix": "$(record-small)transitionGroup",
+    "prefix": "$(record-small)transition-group",
     "body": [
-      "transition-group$0"
+      "<transition-group>\n\t$0</transition-group>"
     ],
     "description": "transition-group element"
   },
@@ -300,33 +304,33 @@
     "description": "@appear-cancelled=''"
   },
   "routerLink": {
-    "prefix": "$(record-small)routerLink",
+    "prefix": "$(record-small)router-link",
     "body": [
-      "router-link $0"
+      "<router-link :to=\"$0\" ></router-link>"
     ],
     "description": "router-link element"
   },
-  "routerLinkTo": {
-    "prefix": "$(record-small)routerLinkTo",
-    "body": [
-      "router-link (to=\"$1\") $0"
-    ],
-    "description": "router-link (to='') . router-link element"
-  },
-  "to": {
-    "prefix": "$(record-small)to",
-    "body": ["to=\"$1\"$0"],
-    "description": "to=''"
-  },
-  "tag": {
-    "prefix": "$(record-small)tag",
-    "body": ["tag=\"$1\"$0"],
-    "description": "tag=''"
-  },
+  // "routerLinkTo": {
+  //   "prefix": "$(record-small)routerLinkTo",
+  //   "body": [
+  //     "router-link (to=\"$1\") $0"
+  //   ],
+  //   "description": "router-link (to='') . router-link element"
+  // },
+  // "to": {
+  //   "prefix": "$(record-small)to",
+  //   "body": ["to=\"$1\"$0"],
+  //   "description": "to=''"
+  // },
+  // "tag": {
+  //   "prefix": "$(record-small)tag",
+  //   "body": ["tag=\"$1\"$0"],
+  //   "description": "tag=''"
+  // },
   "routerView": {
     "prefix": "$(record-small)routerView",
     "body": [
-      "router-view $0"
+      "<router-view>$0</router-view>"
     ],
     "description": "router-view element"
   }

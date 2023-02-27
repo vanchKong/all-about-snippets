@@ -60,6 +60,14 @@
       {
         "language": "scss",
         "path": "./snippets/basic/css.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/vue-html.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/basic/html.json"
       }
     ]
   }

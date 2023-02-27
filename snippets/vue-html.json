@@ -10,110 +10,117 @@
     ],
     "description": "template element"
   },
-  "v-text": {
-    "prefix": "$(record-small)vText",
-    "body": [
-      "v-text=\"${1:msg}\""
-    ],
-    "description": "Expects: string. Updates the element’s textContent."
-  },
-  "v-html": {
-    "prefix": "$(record-small)vHtml",
-    "body": [
-      "v-html=\"${1:html}\""
-    ],
-    "description": "Expects: string. Updates the element’s innerHTML."
-  },
-  "v-show": {
-    "prefix": "$(record-small)vShow",
-    "body": [
-      "v-show=\"${1:condition}\""
-    ],
-    "description": "Expects: any"
-  },
-  "v-if": {
-    "prefix": "$(record-small)vIf",
-    "body": [
-      "v-if=\"${1:condition}\""
-    ],
-    "description": "Expects: any"
-  },
-  "v-else": {
-    "prefix": "$(record-small)vElse",
-    "body": ["v-else"],
-    "description": "Does not expect expression. previous sibling element must have v-if or v-else-if."
-  },
-  "v-else-if": {
-    "prefix": "$(record-small)vElseIf",
-    "body": [
-      "v-else-if=\"${1:condition}\""
-    ],
-    "description": "Expects: any. previous sibling element must have v-if or v-else-if."
-  },
-  "v-for-without-key": {
-    "prefix": "$(record-small)vForWithoutKey",
-    "body": [
-      "v-for=\"${1:item} in ${2:items}\""
-    ],
-    "description": "Expects: Array | Object | number | string"
-  },
+  // "v-text": {
+  //   "prefix": "$(record-small)vText",
+  //   "body": [
+  //     "v-text=\"${1:msg}\""
+  //   ],
+  //   "description": "Expects: string. Updates the element’s textContent."
+  // },
+  // "v-html": {
+  //   "prefix": "$(record-small)vHtml",
+  //   "body": [
+  //     "v-html=\"${1:html}\""
+  //   ],
+  //   "description": "Expects: string. Updates the element’s innerHTML."
+  // },
+  // "v-show": {
+  //   "prefix": "$(record-small)vShow",
+  //   "body": [
+  //     "v-show=\"${1:condition}\""
+  //   ],
+  //   "description": "Expects: any"
+  // },
+  // "v-if": {
+  //   "prefix": "$(record-small)vIf",
+  //   "body": [
+  //     "v-if=\"${1:condition}\""
+  //   ],
+  //   "description": "Expects: any"
+  // },
+  // "v-else": {
+  //   "prefix": "$(record-small)vElse",
+  //   "body": ["v-else"],
+  //   "description": "Does not expect expression. previous sibling element must have v-if or v-else-if."
+  // },
+  // "v-else-if": {
+  //   "prefix": "$(record-small)vElseIf",
+  //   "body": [
+  //     "v-else-if=\"${1:condition}\""
+  //   ],
+  //   "description": "Expects: any. previous sibling element must have v-if or v-else-if."
+  // },
+  // "v-for-without-key": {
+  //   "prefix": "$(record-small)vForWithoutKey",
+  //   "body": [
+  //     "v-for=\"${1:item} in ${2:items}\""
+  //   ],
+  //   "description": "Expects: Array | Object | number | string"
+  // },
+  // "v-for": {
+  //   "prefix": "$(record-small)vFor",
+  //   "body": [
+  //     "v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\""
+  //   ],
+  //   "description": "Expects: Array | Object | number | string"
+  // },
   "v-for": {
-    "prefix": "$(record-small)vFor",
+    "prefix": "$(record-small)v-for",
     "body": [
-      "v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\""
+      "v-for=\"(item, index) in ${2:Object}\" :key=\"index\""
     ],
     "description": "Expects: Array | Object | number | string"
   },
-  "v-on": {
-    "prefix": "$(record-small)vOn",
-    "body": [
-      "v-on:${1:event}=\"${2:handle}\""
-    ],
-    "description": "Expects: Function | Inline Statement"
-  },
-  "v-bind": {
-    "prefix": "$(record-small)vBind",
-    "body": [
-      "v-bind$1=\"${2}\""
-    ],
-    "description": "Expects: any (with argument) | Object (without argument)"
-  },
-  "v-model": {
-    "prefix": "$(record-small)vModel",
-    "body": [
-      "v-model=\"${1:something}\""
-    ],
-    "description": "Expects: varies based on value of form inputs element or output of components"
-  },
-  "v-pre": {
-    "prefix": "$(record-small)vPre",
-    "body": ["v-pre"],
-    "description": "Does not expect expression"
-  },
-  "v-cloak": {
-    "prefix": "$(record-small)vCloak",
-    "body": ["v-cloak"],
-    "description": "Does not expect expression"
-  },
-  "v-once": {
-    "prefix": "$(record-small)vOnce",
-    "body": ["v-once"],
-    "description": "Does not expect expression"
-  },
-  "key": {
-    "prefix": "$(record-small)key",
-    "body": [
-      ":key=\"${1:key}\""
-    ],
-    "description": "Expects: string. Children of the same common parent must have unique keys. Duplicate keys will cause render errors."
-  },
-  "ref": {
-    "prefix": "$(record-small)ref",
-    "body": [
-      "ref=\"${1:reference}\"$0"
-    ],
-    "description": "Expects: string. ref is used to register a reference to an element or a child component. The reference will be registered under the parent component’s $refs object. If used on a plain DOM element, the reference will be that element; if used on a child component, the reference will be component instance."
-  },
+  // "v-on": {
+  //   "prefix": "$(record-small)vOn",
+  //   "body": [
+  //     "v-on:${1:event}=\"${2:handle}\""
+  //   ],
+  //   "description": "Expects: Function | Inline Statement"
+  // },
+  // "v-bind": {
+  //   "prefix": "$(record-small)vBind",
+  //   "body": [
+  //     "v-bind$1=\"${2}\""
+  //   ],
+  //   "description": "Expects: any (with argument) | Object (without argument)"
+  // },
+  // "v-model": {
+  //   "prefix": "$(record-small)vModel",
+  //   "body": [
+  //     "v-model=\"${1:something}\""
+  //   ],
+  //   "description": "Expects: varies based on value of form inputs element or output of components"
+  // },
+  // "v-pre": {
+  //   "prefix": "$(record-small)vPre",
+  //   "body": ["v-pre"],
+  //   "description": "Does not expect expression"
+  // },
+  // "v-cloak": {
+  //   "prefix": "$(record-small)vCloak",
+  //   "body": ["v-cloak"],
+  //   "description": "Does not expect expression"
+  // },
+  // "v-once": {
+  //   "prefix": "$(record-small)vOnce",
+  //   "body": ["v-once"],
+  //   "description": "Does not expect expression"
+  // },
+  // "key": {
+  //   "prefix": "$(record-small)key",
+  //   "body": [
+  //     ":key=\"${1:key}\""
+  //   ],
+  //   "description": "Expects: string. Children of the same common parent must have unique keys. Duplicate keys will cause render errors."
+  // },
+  // "ref": {
+  //   "prefix": "$(record-small)ref",
+  //   "body": [
+  //     "ref=\"${1:reference}\"$0"
+  //   ],
+  //   "description": "Expects: string. ref is used to register a reference to an element or a child component. The reference will be registered under the parent component’s $refs object. If used on a plain DOM element, the reference will be that element; if used on a child component, the reference will be component instance."
+  // },
   "slotA": {
     "prefix": "$(record-small)slotA",
     "body": ["slot=\"$1\"$0"],
