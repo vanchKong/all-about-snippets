@@ -385,25 +385,25 @@
     "prefix": "$(record-small)actions",
     "body": ["actions"],
     "description": "just a word"
-  },
-  "mapState": {
-    "prefix": "$(record-small)mapState",
-    "body": ["mapState"],
-    "description": "just a word"
-  },
-  "mapGetters": {
-    "prefix": "$(record-small)mapGetters",
-    "body": ["mapGetters"],
-    "description": "just a word"
-  },
-  "mapActions": {
-    "prefix": "$(record-small)mapActions",
-    "body": ["mapActions"],
-    "description": "just a word"
-  },
-  "mapMutations": {
-    "prefix": "$(record-small)mapMutations",
-    "body": ["mapMutations"],
-    "description": "just a word"
   }
+  // "mapState": {
+  //   "prefix": "$(record-small)mapState",
+  //   "body": ["mapState"],
+  //   "description": "just a word"
+  // },
+  // "mapGetters": {
+  //   "prefix": "$(record-small)mapGetters",
+  //   "body": ["mapGetters"],
+  //   "description": "just a word"
+  // },
+  // "mapActions": {
+  //   "prefix": "$(record-small)mapActions",
+  //   "body": ["mapActions"],
+  //   "description": "just a word"
+  // },
+  // "mapMutations": {
+  //   "prefix": "$(record-small)mapMutations",
+  //   "body": ["mapMutations"],
+  //   "description": "just a word"
+  // }
 }
