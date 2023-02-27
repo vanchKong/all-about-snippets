@@ -1,5 +1,6 @@
 {
-  "name": "snippets",
+  "name": "all-about-snippets",
+	"publisher": "vanchkong",
   "displayName": "all-about-snippets",
   "description": "vue2/3 snippets",
   "icon": "public/logo.png",
@@ -27,13 +28,13 @@
     "html",
     "javascript"
   ],
-  "homepage": "https://github.com/vanchkong/vue-snippets#readme",
+  "homepage": "https://github.com/vanchkong/all-about-snippets#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vanchkong/vue-snippets"
+    "url": "https://github.com/vanchkong/all-about-snippets"
   },
   "bugs": {
-    "url": "https://github.com/vanchkong/vue-snippets/issues",
+    "url": "https://github.com/vanchkong/all-about-snippets/issues",
     "email": "vanchkong@qq.com"
   },
   "contributes": {
