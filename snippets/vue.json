@@ -1,166 +1,166 @@
 {
-	"Vue2 选项式 lang 模板": {
-		"prefix": "$(record-small)vue2ol",
-		"body": [
-			"<template>",
-			"\t<div>",
-			"",
-			"\t</div>",
-			"</template>",
-			"",
-			"<script>",
-			"export default {",
-			"\tdata(){",
-			"\t\treturn {}",
-			"\t},",
-			"\tcreated() {},",
-			"}",
-			"</script>",
-			"",
-			"<style lang=\"${0:less}\" scoped>",
-			"",
-			"</style>",
-			""
-		]
-		// "description": "POWERED BY SNIPPETS"
-	},
-	// "Vue2 选项式 LESS 模板": {
-	// 	"prefix": "$(record-small)vue2ol",
-	// 	"body": [
-	// 		"<template>",
-	// 		"\t<div>",
-	// 		"",
-	// 		"\t</div>",
-	// 		"</template>",
-	// 		"",
-	// 		"<script>",
-	// 		"export default {",
-	// 		"\tdata(){",
-	// 		"\t\treturn {}",
-	// 		"\t},",
-	// 		"\tcreated() {},",
-	// 		"}",
-	// 		"</script>",
-	// 		"",
-	// 		"<style lang=\"less\" scoped>",
-	// 		"",
-	// 		"</style>",
-	// 		""
-	// 	]
-	// 	// "description": "POWERED BY SNIPPETS"
-	// },
-	// "Vue2 选项式 CSS 模板": {
-	// 	"prefix": "$(record-small)vue2oc",
-	// 	"body": [
-	// 		"<template>",
-	// 		"\t<div>",
-	// 		"${0}",
-	// 		"\t</div>",
-	// 		"</template>",
-	// 		"",
-	// 		"<script>",
-	// 		"export default {",
-	// 		"\tdata(){",
-	// 		"\t\treturn {}",
-	// 		"\t},",
-	// 		"\tcreated() {},",
-	// 		"}",
-	// 		"</script>",
-	// 		"",
-	// 		"<style scoped>",
-	// 		"",
-	// 		"</style>",
-	// 		""
-	// 	]
-	// 	// "description": "POWERED BY SNIPPETS"
-	// },
-	"Vue3 组合式 lang 模板": {
-		"prefix": "$(record-small)vue3cl",
-		"body": [
-			"<template>",
-			"\t<div>",
-			"",
-			"\t</div>",
-			"</template>",
-			"",
-			"<script setup>",
-			"import { ref, onMounted } from 'vue'",
-			"onMounted(() => {})",
-			"</script>",
-			"",
-			"<style lang=\"${0:less}\" scoped>",
-			"",
-			"</style>",
-			""
-		]
-		// "description": "POWERED BY SNIPPETS"
-	},
-	// "Vue3 组合式 LESS 模板": {
-	// 	"prefix": "$(record-small)vue3cl",
-	// 	"body": [
-	// 		"<template>",
-	// 		"\t<div>",
-	// 		"",
-	// 		"\t</div>",
-	// 		"</template>",
-	// 		"",
-	// 		"<script setup>",
-	// 		"import { ref, onMounted } from 'vue'",
-	// 		"onMounted(() => {${0}})",
-	// 		"</script>",
-	// 		"",
-	// 		"<style lang=\"less\" scoped>",
-	// 		"",
-	// 		"</style>",
-	// 		""
-	// 	]
-	// 	// "description": "POWERED BY SNIPPETS"
-	// },
-	"Vue3 组合式 TS 模板": {
-		"prefix": "$(record-small)vue3ct",
-		"body": [
-			"<template>",
-			"\t<div>",
-			"",
-			"\t</div>",
-			"</template>",
-			"",
-			"<script setup lang=\"ts\">",
-			"import { ref, onMounted } from 'vue'",
-			"onMounted(() => {})",
-			"</script>",
-			"",
-			"<style lang=\"${0:less}\" scoped>",
-			"",
-			"</style>",
-			""
-		]
-		// "description": "POWERED BY SNIPPETS"
-	},
-	"Vue3 组合式 子组件": {
-		"prefix": "$(record-small)vue3cchild",
-		"body": [
-			"<template>",
-			"\t<div>",
-			"",
-			"\t</div>",
-			"</template>",
-			"",
-			"<script setup>",
-			"import { ref, onMounted } from 'vue'",
-			"const props = defineProps({",
-			"\tprop1: String,",
-			"})",
-			"const emit = defineEmits(['emitFun'])",
-			"defineExpose({})",
-			"onMounted(() => {})",
-			"</script>",
-			"",
-			"<style lang=\"${0:less}\" scoped>",
-			"",
-			"</style>",
-			""
-		]
-		// "description": "POWERED BY SNIPPETS"
-	}
+  "Vue2 选项式 lang 模板": {
+    "prefix": "$(record-small)vue2ol",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "\tdata(){",
+      "\t\treturn {}",
+      "\t},",
+      "\tcreated() {},",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"${0:less}\" scoped>",
+      "",
+      "</style>",
+      ""
+    ]
+    // "description": "POWERED BY SNIPPETS"
+  },
+  // "Vue2 选项式 LESS 模板": {
+  // 	"prefix": "$(record-small)vue2ol",
+  // 	"body": [
+  // 		"<template>",
+  // 		"\t<div>",
+  // 		"",
+  // 		"\t</div>",
+  // 		"</template>",
+  // 		"",
+  // 		"<script>",
+  // 		"export default {",
+  // 		"\tdata(){",
+  // 		"\t\treturn {}",
+  // 		"\t},",
+  // 		"\tcreated() {},",
+  // 		"}",
+  // 		"</script>",
+  // 		"",
+  // 		"<style lang=\"less\" scoped>",
+  // 		"",
+  // 		"</style>",
+  // 		""
+  // 	]
+  // 	// "description": "POWERED BY SNIPPETS"
+  // },
+  // "Vue2 选项式 CSS 模板": {
+  // 	"prefix": "$(record-small)vue2oc",
+  // 	"body": [
+  // 		"<template>",
+  // 		"\t<div>",
+  // 		"${0}",
+  // 		"\t</div>",
+  // 		"</template>",
+  // 		"",
+  // 		"<script>",
+  // 		"export default {",
+  // 		"\tdata(){",
+  // 		"\t\treturn {}",
+  // 		"\t},",
+  // 		"\tcreated() {},",
+  // 		"}",
+  // 		"</script>",
+  // 		"",
+  // 		"<style scoped>",
+  // 		"",
+  // 		"</style>",
+  // 		""
+  // 	]
+  // 	// "description": "POWERED BY SNIPPETS"
+  // },
+  "Vue3 组合式 lang 模板": {
+    "prefix": "$(record-small)vue3cl",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "import { ref, onMounted } from 'vue'",
+      "onMounted(() => {})",
+      "</script>",
+      "",
+      "<style lang=\"${0:less}\" scoped>",
+      "",
+      "</style>",
+      ""
+    ]
+    // "description": "POWERED BY SNIPPETS"
+  },
+  // "Vue3 组合式 LESS 模板": {
+  // 	"prefix": "$(record-small)vue3cl",
+  // 	"body": [
+  // 		"<template>",
+  // 		"\t<div>",
+  // 		"",
+  // 		"\t</div>",
+  // 		"</template>",
+  // 		"",
+  // 		"<script setup>",
+  // 		"import { ref, onMounted } from 'vue'",
+  // 		"onMounted(() => {${0}})",
+  // 		"</script>",
+  // 		"",
+  // 		"<style lang=\"less\" scoped>",
+  // 		"",
+  // 		"</style>",
+  // 		""
+  // 	]
+  // 	// "description": "POWERED BY SNIPPETS"
+  // },
+  "Vue3 组合式 TS 模板": {
+    "prefix": "$(record-small)vue3ct",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "import { ref, onMounted } from 'vue'",
+      "onMounted(() => {})",
+      "</script>",
+      "",
+      "<style lang=\"${0:less}\" scoped>",
+      "",
+      "</style>",
+      ""
+    ]
+    // "description": "POWERED BY SNIPPETS"
+  },
+  "Vue3 组合式 子组件": {
+    "prefix": "$(record-small)vue3cchild",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "import { ref, onMounted } from 'vue'",
+      "const props = defineProps({",
+      "\tprop1: String,",
+      "})",
+      "const emit = defineEmits(['emitFun'])",
+      "defineExpose({})",
+      "onMounted(() => {})",
+      "</script>",
+      "",
+      "<style lang=\"${0:less}\" scoped>",
+      "",
+      "</style>",
+      ""
+    ]
+    // "description": "POWERED BY SNIPPETS"
+  }
 }

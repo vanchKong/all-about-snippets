@@ -311,15 +311,15 @@
     ],
     "description": "router.beforeEach()"
   },
-	"router.afterEach": {
-			"prefix": "$(record-small)router.afterEach",
-			"body": [
-					"${1:router}.afterEach((to, from) => {",
-					"\t${2:// to and from are both route objects.}",
-					"})$0"
-			],
-			"description": "router.afterEach"
-	},
+  "router.afterEach": {
+    "prefix": "$(record-small)router.afterEach",
+    "body": [
+      "${1:router}.afterEach((to, from) => {",
+      "\t${2:// to and from are both route objects.}",
+      "})$0"
+    ],
+    "description": "router.afterEach"
+  },
   "$route.params": {
     "prefix": "$(record-small).$routep",
     "body": [
