@@ -1,9 +1,7 @@
 # Vue VSCode Snippets
 
 ## Description
-
-![SnippetDemo](https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/SnippetDemo.gif)
-
+vue2/3 代码片段模板生成
 ## Snippets
 
 ### Vue 模板
